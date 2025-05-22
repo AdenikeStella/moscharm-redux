@@ -11,7 +11,7 @@ const cartSlice = createSlice({
         add(state, action) {
             const updatedCartList = state.cartList.concat(action.payload);
             const total = state.total + action.payload.price;
-            return {... state, total: total, cartList: updatedCartList};
+            return {...state, total: total, cartList:updatedCartList};
         },
 
         remove(state, action){
